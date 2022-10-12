@@ -24,7 +24,7 @@
         <input type="text" id="endereco" name="endereco"><br>
         <label for="numero">Número:</label><br>
         <input type="text" id="numero" name="numero"><br>
-        <button type="submit" name="cadastrarCliente" class="btnEnviar">Cadastrar</button>
+        <button class="w3-button w3-blue w3-margin" type="submit" name="cadastrarCliente" class="btnEnviar">Cadastrar</button>
     </form>
     <table style="background-color: #6fa1fe; margin-top: 10px; border-radius: 7px; text-align: center; padding: 5px;">
   <tr>
@@ -48,7 +48,7 @@
             echo("<td>".$i["nome"]."</td>");
             echo("<td>".$i["endereco"]."</td>");
             echo("<td>".$i["numero"]."</td>");
-            echo('<td><button onclick="document.getElementById(\'id'.$i["codigo"].'\').style.display=\'block\'">Alterar</button></td>');
+            echo('<td><button class="w3-button w3-blue w3-margin" onclick="document.getElementById(\'id'.$i["codigo"].'\').style.display=\'block\'">Alterar</button></td>');
             echo("</tr>");
 
             echo('<div id="id'.$i["codigo"].'" class="w3-modal">');
@@ -67,7 +67,7 @@
             echo('<input type="text" id="endereco" name="endereco" value="'.$i["endereco"].'"><br>');
             echo('<label for="numero">Número:</label><br>');
             echo('<input type="text" id="numero" name="numero" value="'.$i["numero"].'"><br>');
-            echo('<button type="submit" name="editarCliente" class="btnEnviar">Cadastrar</button>');
+            echo('<button class="w3-button w3-blue w3-margin" type="submit" name="editarCliente" class="btnEnviar">Alterar</button>');
             echo('</form>');
 
             echo('</div>');

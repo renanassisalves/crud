@@ -19,7 +19,9 @@ CREATE TABLE clientes(
     codigo integer primary key AUTO_INCREMENT not null,
     data_abertura datetime not null,
     nome_consumidor varchar(250),
-    cpf_consumidor varchar(30)
+    cpf_consumidor varchar(30),
+    cod_produto integer,
+    finalizado boolean
     );
     
   CREATE TABLE ordem_produto(
