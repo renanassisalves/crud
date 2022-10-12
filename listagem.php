@@ -41,6 +41,3 @@ function filtrar_data_ordem($data_inicial, $data_final)
     $final = mysqli_query($db, 'select * from ordem where ordem.data_abertura between "'.$data_inicial.'" and "'.$data_final.'" ');
     return $final;
 }
-
-
-?>
